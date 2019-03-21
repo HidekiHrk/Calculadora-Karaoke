@@ -3,8 +3,11 @@ body {
     width: 100%;
     height: 100%;
     padding: 0;
-    margin: 0;    
+    margin: 0;
+    user-select: none;
 }
+
+/* ---------- Control ----------- */
 
 div#control {
     height: 20px;
@@ -49,6 +52,10 @@ button#minimize {
     filter: saturate(1.5);
 }
 
+/* ------------------------------ */
+
+/* ------------ Body ------------ */
+
 div#body {
     width: 350px;
     height: 470px;
@@ -56,5 +63,123 @@ div#body {
     background-color: white;
     padding: 0;
     margin: 0;
+    overflow-y: scroll;
 }
 
+div#body::-webkit-scrollbar {
+    width: 10px;
+    background-color: #ddd;
+    border-radius: 10px;
+}
+div#body::-webkit-scrollbar-thumb {
+    width: 10px;
+    border-radius: 10px;
+    background-color: #ccc;
+}
+
+button#add_button {
+    width: 40px;
+    height: 25px;
+    outline: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: white;
+    border: 2px solid rgb(151, 145, 156);
+    color: rgb(151, 145, 156);
+    font-weight: bold;
+    border-radius: 10px;
+    margin: 5px;
+}
+button#add_button:hover {
+    background-color: rgb(96, 91, 100);
+    color: white;
+}
+
+/* Point Blocks */
+
+div.p_block {
+    height: 60px;
+    width: 320px;
+    display: block;
+    position: relative;
+    border: 2px solid rgb(151, 145, 156);
+    border-radius: 8px;
+    margin: 5px;
+    background-color: rgb(209, 202, 216);
+}
+
+div.p_block input {
+    margin: 3px;
+    padding-left: 5px;
+    display: block;
+    border: 2px solid rgb(151, 145, 156);
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    margin-bottom: 4px;
+    width: 300px;
+    background-color: rgb(96, 91, 100);
+    color:  white;
+}
+div.p_block input::placeholder {
+    color:  rgba(255, 255, 255, 0.486);
+}
+
+div.p_block p.point_indicator {
+    font-size: 16px;
+    font-family: sans-serif;
+    background-color: rgb(96, 91, 100);
+    display: inline-block;
+    padding-right: 5px; padding-left: 5px;
+    padding-top: 1px; padding-bottom: 1px;
+    margin-left: 3px; margin-top: 0px;
+    border-radius: 5px;
+    color: white;
+}
+
+div.p_block p.point {
+    font-size: 16px;
+    font-family: sans-serif;
+    background-color: rgb(96, 91, 100);
+    display: inline-block;
+    padding-right: 5px; padding-left: 5px;
+    padding-top: 1px; padding-bottom: 1px;
+    margin-left: 3px; margin-top: 0px;
+    border-radius: 5px;
+    color: white;
+}
+
+div.p_block p.point span {
+    background-color: rgb(78, 65, 85);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    color: white;
+    padding-left: 3px; padding-right: 3px; padding-bottom: 2px;
+    margin: 0;
+    border-radius: 5px; 
+    font-size: 10px;
+    display: inline;
+}
+
+div.p_block p.point span:hover {
+    color: red;
+    background-color: rgb(238, 176, 165);
+}
+
+
+div.p_block button.add_point {
+    outline: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: white;
+    border: 2px solid rgb(151, 145, 156);
+    color: rgb(151, 145, 156);
+    font-weight: bold;
+    border-radius: 10px;
+    margin: 5px;
+    height: 23px;
+}
+
+div.p_block button.add_point:hover {
+    background-color: rgb(96, 91, 100);
+    color: white;
+}
+
+/* ------------------------------ */
