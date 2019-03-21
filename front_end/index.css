@@ -1,0 +1,60 @@
+body {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;    
+}
+
+div#control {
+    height: 20px;
+    width: 350px;
+    background-color: #ddd;
+    padding: 0;
+    margin: 0;
+    border-radius: 10px 10px 0px 0px;
+    -webkit-app-region: drag;
+}
+
+div#control button {
+    -webkit-app-region: no-drag;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    padding: 1px;
+    margin: 0;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+}
+
+button#menu {
+    left: 1px;
+}
+
+button#exit {
+    right: 4px;
+}
+
+button#minimize {
+    right: 24px;
+}
+
+.button img {
+    transition: filter 0.5s ease;
+    width: 18px;
+    filter: saturate(0);
+}
+.button img:hover {
+    filter: saturate(1.5);
+}
+
+div#body {
+    width: 350px;
+    height: 470px;
+    border-radius: 0px 0px 10px 10px;
+    background-color: white;
+    padding: 0;
+    margin: 0;
+}
+

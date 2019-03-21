@@ -1,0 +1,22 @@
+{
+  "name": "calculadora-karaoke",
+  "version": "0.0.1",
+  "description": "Calculadora para o karaokê da Animes Brasil",
+  "main": "main.js",
+  "window":{
+    "icon": "img/karaoke_min.png"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HidekiHrk/Calculadora-Karaoke.git"
+  },
+  "author": "HidekiHrk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HidekiHrk/Calculadora-Karaoke/issues"
+  },
+  "homepage": "https://github.com/HidekiHrk/Calculadora-Karaoke#readme"
+}
