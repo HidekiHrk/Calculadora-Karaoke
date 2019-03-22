@@ -10,12 +10,18 @@
 </head>
 <body>
     <div id="control">
-        <button id="menu" class="button"><img src="./img/control/menu.png"></button>
+        <button id="menu" class="button" onclick="open_or_close_menu('button')">
+            <img src="./img/control/menu.png"></button>
         <button id="minimize" class="button" onclick="minimize()"><img src="./img/control/minimize.png"></button>
         <button id="exit" class="button" onclick="close_window()"><img src="./img/control/exit.png"></button>
     </div>
-    <div id="body">
-        <h1 id="participant_list">Lista de Participantes:</h1>
+    <ul id="menu_body" onclick="open_or_close_menu('menu')">
+        <li>Abrir 📂</li>
+        <li>Salvar 💾</li>
+        <li onclick="save_file()">Salvar Como... 💾</li>
+    </ul>
+    <div id="body" onclick="open_or_close_menu('app_body')">
+        <h1 id="participant_list">Lista de Participantes</h1>
         <button id="add_button" onclick="add_block()">+</button>
     </div>
 </body>
