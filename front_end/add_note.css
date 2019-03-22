@@ -37,11 +37,11 @@ button#menu {
 }
 
 button#exit {
-    right: 4px;
+    right: 7px;
 }
 
 button#minimize {
-    right: 24px;
+    right: 27px;
 }
 
 .button img {
@@ -68,4 +68,72 @@ div#body {
     box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.315);
 }
 
+p#nota {
+    font-size: 16px;
+    font-family: sans-serif;
+    background-color: rgb(96, 91, 100);
+    display: inline-block;
+    position: absolute;
+    padding-right: 5px; padding-left: 5px;
+    padding-top: 1px; padding-bottom: 1px;
+    margin-left: 5px; margin-top: 5px;
+    border-radius: 5px;
+    color: white;
+    overflow: hidden;
+}
+
+p#nota span {
+    color: black;
+    background-color: #ddd;
+    padding: 5px;
+    margin: 0;
+}
+
+input#note_input {
+    margin: 3px;
+    padding-left: 5px;
+    display: block;
+    border: 2px solid rgb(151, 145, 156);
+    border-radius: 5px;
+    outline: none;
+    margin-top: 3px;
+    font-size: 16px;
+    margin-bottom: 4px;
+    width: 300px;
+    background-color: rgb(96, 91, 100);
+    color:  white;
+    position: absolute;
+    top: 50px;
+}
+
+input#note_input::placeholder {
+    color:  rgba(255, 255, 255, 0.486);
+}
+
+input.dialogue_button {
+    position: absolute;
+    top: 82px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border: none;
+    border-radius: 10px;
+    color: black;
+    background-color: rgb(211, 211, 211);
+    font-size: 14px;
+    font-family: sans-serif;
+    outline: none;
+    padding: 4px;
+}
+
+input.dialogue_button:hover {
+    background-color: rgb(96, 91, 100);
+    color: white;
+}
+
+input#accept_button {
+    left: 5px;
+}
+
+input#reject_button {
+    left: 130px;
+}
 /* ------------------------------ */

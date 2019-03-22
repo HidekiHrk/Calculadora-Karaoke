@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="index.css">
     <title>Calculadora Karaokê</title>
     <script src="./index.js"></script>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <div id="control">
@@ -15,13 +15,8 @@
         <button id="exit" class="button" onclick="close_window()"><img src="./img/control/exit.png"></button>
     </div>
     <div id="body">
-        <div id="p1" class="p_block">
-            <input placeholder="Nome do Participante">
-            <p class='point_indicator'>Notas:</p>
-            <p class="point">1 <span>x</span></p>
-            <button class="add_point" onclick="add_window(this)">+</button>
-        </div>
-        <button id="add_button">+</button>
+        <h1 id="participant_list">Lista de Participantes:</h1>
+        <button id="add_button" onclick="add_block()">+</button>
     </div>
 </body>
 </html>

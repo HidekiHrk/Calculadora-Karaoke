@@ -17,6 +17,7 @@ div#control {
     margin: 0;
     border-radius: 10px 10px 0px 0px;
     -webkit-app-region: drag;
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.315);
 }
 
 div#control button {
@@ -36,11 +37,11 @@ button#menu {
 }
 
 button#exit {
-    right: 4px;
+    right: 7px;
 }
 
 button#minimize {
-    right: 24px;
+    right: 27px;
 }
 
 .button img {
@@ -64,6 +65,7 @@ div#body {
     padding: 0;
     margin: 0;
     overflow-y: scroll;
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.315);
 }
 
 div#body::-webkit-scrollbar {
@@ -74,7 +76,19 @@ div#body::-webkit-scrollbar {
 div#body::-webkit-scrollbar-thumb {
     width: 10px;
     border-radius: 10px;
-    background-color: #ccc;
+    background-color: #999;
+}
+
+h1#participant_list {
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: center;
+    font-weight: normal;
+    color: rgb(170, 170, 170);
+    border-bottom: 2px solid rgb(170, 170, 170);
+    margin: 0; margin-bottom: 10px;
+    padding: 10px;
+
 }
 
 button#add_button {
@@ -86,6 +100,7 @@ button#add_button {
     border: 2px solid rgb(151, 145, 156);
     color: rgb(151, 145, 156);
     font-weight: bold;
+    font-size: 15px;
     border-radius: 10px;
     margin: 5px;
 }
@@ -128,7 +143,7 @@ div.p_block p.point_indicator {
     font-size: 16px;
     font-family: sans-serif;
     background-color: rgb(96, 91, 100);
-    display: inline-block;
+    display: inline;
     padding-right: 5px; padding-left: 5px;
     padding-top: 1px; padding-bottom: 1px;
     margin-left: 3px; margin-top: 0px;
@@ -140,30 +155,40 @@ div.p_block p.point {
     font-size: 16px;
     font-family: sans-serif;
     background-color: rgb(96, 91, 100);
-    display: inline-block;
+    display: inline-flex;
     padding-right: 5px; padding-left: 5px;
     padding-top: 1px; padding-bottom: 1px;
+    margin: 0;
     margin-left: 3px; margin-top: 0px;
     border-radius: 5px;
     color: white;
+    height: 18px;
 }
 
-div.p_block p.point span {
+div.p_block p.point button {
     background-color: rgb(78, 65, 85);
     transition: background-color 0.3s ease, color 0.3s ease;
     color: white;
     padding-left: 3px; padding-right: 3px; padding-bottom: 2px;
     margin: 0;
-    border-radius: 5px; 
+    border-radius: 30px; 
     font-size: 10px;
-    display: inline;
+    margin-top: 1.5px;
+    margin-right: 0px;
+    margin-left: 5px;
+    border: none;
+    height: 15px;
+    width: 15px;
 }
 
-div.p_block p.point span:hover {
+div.p_block p.point button:hover {
     color: red;
     background-color: rgb(238, 176, 165);
 }
 
+div.point_list {
+    display: inline-block;
+}
 
 div.p_block button.add_point {
     outline: none;
@@ -172,13 +197,35 @@ div.p_block button.add_point {
     border: 2px solid rgb(151, 145, 156);
     color: rgb(151, 145, 156);
     font-weight: bold;
-    border-radius: 10px;
+    border-radius: 30px;
     margin: 5px;
     height: 23px;
+    display: inline-block;
+    margin-top: 0px;
 }
 
 div.p_block button.add_point:hover {
     background-color: rgb(96, 91, 100);
+    color: white;
+}
+
+div.p_block button.remove_block {
+    outline: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: rgb(216, 183, 183);
+    border: 2px solid rgb(151, 145, 156);
+    color: rgb(151, 145, 156);
+    font-weight: bold;
+    border-radius: 30px;
+    margin-right: 5px;
+    height: 23px;
+    display: inline;
+    float: right;
+    margin-top: 0px;
+}
+
+div.p_block button.remove_block:hover {
+    background-color: rgb(177, 0, 0);
     color: white;
 }
 
