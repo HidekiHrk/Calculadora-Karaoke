@@ -16,9 +16,10 @@
         <button id="exit" class="button" onclick="close_window()"><img src="./img/control/exit.png"></button>
     </div>
     <ul id="menu_body" onclick="open_or_close_menu('menu')">
-        <li>Abrir 📂</li>
-        <li>Salvar 💾</li>
-        <li onclick="save_file()">Salvar Como... 💾</li>
+        <li onclick="open_project()">Abrir Projeto 📂</li>
+        <li onclick="save_project(false)">Salvar Projeto 📝</li>
+        <li onclick="save_project(true)">Salvar Como 💾</li>
+        <li onclick="export_to_txt()">Exportar .txt 📄</li>
     </ul>
     <div id="body" onclick="open_or_close_menu('app_body')">
         <h1 id="participant_list">Lista de Participantes</h1>
